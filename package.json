@@ -13,7 +13,7 @@
     "build": "tsc -p tsconfig.json",
     "fix": "npm run fix:lint ; npm run fix:prettier",
     "fix:prettier": "prettier \"src/**/*.tsx\" --write",
-    "fix:lint": "eslint src --ext .ts --fix",
+    "fix:lint": "eslint src --fix",
     "watch:build": "tsc -p tsconfig.json -w"
   },
   "devDependencies": {
