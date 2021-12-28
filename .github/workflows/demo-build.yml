@@ -1,0 +1,16 @@
+name: Build on demo project
+
+on: [push]
+jobs:
+  one:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Init node env
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14.x
+      - run: npm ci && npm run build
+      - run: cd sample/cra  && npm i && npm run build
+      - run: cd sample/next && npm i && npm run build
