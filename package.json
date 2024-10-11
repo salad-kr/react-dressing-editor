@@ -17,8 +17,8 @@
     "watch:build": "tsc -p tsconfig.json -w"
   },
   "devDependencies": {
-    "@types/react": "17.0.38",
-    "@types/react-dom": "17.0.11",
+    "@types/react": "18.3.11",
+    "@types/react-dom": "18.3.1",
     "@typescript-eslint/eslint-plugin": "5.8.0",
     "@typescript-eslint/parser": "5.8.0",
     "eslint": "7.32.0",
